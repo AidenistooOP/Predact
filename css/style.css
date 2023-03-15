@@ -1,0 +1,333 @@
+body {
+    background-color: skyblue;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #297bff;
+  border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: fixed;
+    padding: 0;
+    overflow: hidden;
+    background-color: #297bff;
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+li {
+    float: left;
+}
+#home {
+  background-color: #001166;
+    color: #297bff;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-family: 'Jura';
+}
+
+li a:hover {
+    background-color: white;
+    color: #297bff;
+}
+
+#logo {
+    float: right;
+    padding: 0px 0 0 0;
+}
+
+#logo img {
+    height: 50px;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .column {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#columnBestellen {
+    padding: 100px 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    transition-delay: 0.1s;
+}
+
+footer {
+    background-color: #5454c5;
+    text-align: center;
+    font-family: sans-serif;
+  margin-top: 200px;
+  margin-bottom: 0%;
+}
+
+.footer-text {
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+}
+
+.footerH2 {
+    color: white;
+}
+
+#overons {
+    text-align: center;
+    max-width: 500px;
+}
+
+.card {
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* add shadow effect */
+}
+
+.card:hover {
+    transform: scale(1.1);
+    /* zoom effect on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    /* adjust shadow effect on hover */
+}
+
+#overonsPara {
+    text-align: center;
+    width: 500px;
+    margin-left: 340px;
+}
+
+  #deDiensten {
+    text-align: center;
+    width: 500px;
+    margin-left: 340px;
+}
+
+
+hr {
+    border: none;
+    width: 200px;
+    height: 3px;
+    background-color: #297bff;
+}
+
+h3 {
+    font-size: 60px;
+    font-family: 'Luckiest Guy';
+    color: white;
+    text-align: center;
+  margin-top: 250px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+    justify-content: center;
+    align-items: center;
+  line-height: 1.6;
+}
+
+#cardGridOne {
+    grid-column: 1;
+    grid-row: 1;
+  cursor: pointer;
+}
+
+#cardGridTwo {
+    grid-column: 2;
+    grid-row: 1;
+  cursor: pointer;
+}
+
+#cardGridThree {
+    grid-column: 3;
+    grid-row: 1;
+  cursor: pointer;
+}
+
+article {
+  margin-left: 160px
+  background: url("../img/background.jpg") center/cover no-repeat;
+}
+
+  @media (max-width: 767px) {
+
+      input[type="color"] {
+        width: 10%;
+      }
+
+      input[type="number"] {
+        width: 8%;
+      }
+
+      button {
+        width: 20%;
+      }
+
+      #tabeDiv {
+        width: 50%;
+      }
+    }
+
+.bg {
+  position: fixed;
+  top: 0;
+  right: -50%;
+  bottom: 0;
+  left: -50%;
+  z-index: -1;
+  opacity: 0.5;
+  background-image: linear-gradient(-60deg, #3633ff 50%, #1e00ff 50%);
+  animation: slide 3s ease-in-out infinite alternate;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+h4 {
+  font-family: sans-serif;
+  color: #5454c5;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+.gridContainer i {
+  color: #5454c5;
+}
+
+      /* Test*/
+
+#projects{
+	margin-top:100px;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	text-align:center;
+	color: var(--main-fonts-color);
+}
+#projects h3{
+    padding-top: 70px;
+}
+#projects p{
+	font-family: var(--main-font-family);
+	font-size:1.2rem;
+	padding: 10px;
+}
+
+.work{
+	display: flex; 
+	flex: 1;
+    flex-wrap: wrap;
+    justify-content:center;
+	align-items: center;
+	padding: 20px;
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	width: 200px;
+	height:250px;
+	border-radius:12px;
+    background:var(--main-decor-color);
+}
+
+.card img{
+	width: 100%;
+	height:70%;
+	border-radius:10px 10px 0px 0px;
+}
+
+.card .work-content{
+	text-align: center;
+	padding: 10px 5px;
+	font-size: 1rem;
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+	cursor: pointer;
+}
+
+.card a{
+	text-decoration: none;
+}
+
+.card .work-content:hover{
+    color:#202020;
+}
+
+.card:hover{
+	box-shadow: 0 0 1.5rem gray;
+}
+  
