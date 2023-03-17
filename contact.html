@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
-    <link rel="icon" href="../img/logo.png" type="image/icon type">
+  <link rel="icon" href="../img/logo.png" type="image/icon type">
   <link href="css/andere.css" rel="stylesheet" type="text/css" />
   <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
 </head>
+
 <body>
   <article>
-  <div class="formDiv">
+    <br>
+    <br>
+    <div class="formDiv">
       <form onsubmit="FormFunction()">
         <label>Volledige naam: *</label> <br>
         <input type="text" required minlength="2"> <br> <br>
         <label>E-mailadres: *</label> <br>
         <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"> <br> <br>
-<label>Enter your phone number:</label> <br><br>
         <label>Uw vraag: *</label> <br>
         <input type="text" id="vraagInput" required minlength="20">
         <br><br> <button onclick="submit()" id="submitBtn">Verzenden</button>
@@ -27,4 +30,5 @@
   </article>
   <script src="script.js"></script>
 </body>
+
 </html>
