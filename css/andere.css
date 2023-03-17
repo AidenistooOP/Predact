@@ -42,3 +42,10 @@ input:invalid {
     border-radius: 12px;
     font-family: sans-serif;
 }
+
+hr {
+    border: none;
+    width: 200px;
+    height: 3px;
+    background-color: #297bff;
+}
