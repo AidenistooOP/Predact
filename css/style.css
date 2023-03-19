@@ -166,6 +166,13 @@ h3 {
   margin-top: 250px;
 }
 
+p {
+    font-size: 16px;
+    font-family: 'Jura';
+    color: white;
+    text-align: center;
+}
+
 .gridContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -329,5 +336,13 @@ p {
 
 .card:hover{
 	box-shadow: 0 0 1.5rem gray;
+}
+
+#githubLink {
+  border-bottom: 1px double;
+}
+
+a {
+  text-decoration: none;
 }
   
